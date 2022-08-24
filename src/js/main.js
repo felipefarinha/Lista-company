@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Lista Company</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="https://kit.fontawesome.com/9af893d26b.js" crossorigin="anonymous"></script>  
+import '../css/style.css'
 
-  </head>
-  <!-- <body>
+document.querySelector('#app').innerHTML = `
+<!-- <body>
     <div class="phone_2">
       <img src="/iphone.png">
       <div class="div_phone"></div>
     </div> -->
 
       <div class="div-phone">
-        <img src="/iphone.png">
+        <img src="./assets/iphone.png">
         <div class="div_phone">
         </div>
       </div>
@@ -103,7 +96,11 @@
 
   <!--</div>  end div_phone -->
 <!--</div>  end div-phone -->
+`
+const toggleMid = document.getElementById('menu-toggleMid');
+const toggle = document.getElementById('menu-toggle');
 
-    <script src="script.js"></script>
-  </body>
-</html>
+toggle.onclick = () => {
+  toggle.classList.toggle('active');
+  toggleMid.classList.toggle('active');
+}
