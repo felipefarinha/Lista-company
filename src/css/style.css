@@ -274,8 +274,14 @@ body {
   border-radius: .5rem;
   /* background: #dad7d7; */
   background: transparent;
-
 }
+
+#app {
+  gap: .7rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .wrap-box{
   display: flex;
   gap: .5rem;
@@ -333,7 +339,7 @@ body {
   /* border: 2px solid var(--thema_azul); */
   color: var(--font_thema_color_dark);
   border-radius: .4rem;
-  width: 48.4%;
+  /* width: 48.4%; */
   height: 100px;
   max-height: 150px;
   overflow: hidden;
