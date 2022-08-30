@@ -1,11 +1,12 @@
 export const box = (listaTarefas) => {
   let out = []
   out = listaTarefas.map(item => {
-    return `<div class="box_big">
-            <p>${item.nomeLista}</p>
-            <p>${item.data}</p>
-          </div>
-          `
+    return `
+      <div class="box_big">
+        <p>${item.nomeLista}</p>
+        <p>${item.data}</p>
+      </div>
+        `
   })
   return out
 }
