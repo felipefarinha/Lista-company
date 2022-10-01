@@ -1,3 +1,14 @@
+export const creatBtnHeader = (strBtn1, strBtn2) =>
+  `
+    <div class="button-new-buy">
+      <h2>${strBtn1}</h2>
+    </div>
+
+    <div class="button-new-task">
+      <h2>${strBtn2}</h2>
+    </div>
+  `
+
 export const box = (listaTarefas) => {
   let out = []
   out = listaTarefas.map(item => {
@@ -10,7 +21,6 @@ export const box = (listaTarefas) => {
   })
   return out
 }
-
 
 export const boxBig = (listaCompras) => {
   let out = []

@@ -190,6 +190,9 @@ body {
   font-size: 1rem;
 }
 /* #### SELECT MENU #### */
+.select-menu {
+  height: 3rem;
+}
 .select-menu ul{
   display: flex;
   justify-content: space-around;
